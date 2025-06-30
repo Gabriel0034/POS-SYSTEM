@@ -1,0 +1,59 @@
+/*
+   style.css
+   Global stylesheet for the POS system.
+   Contains shared styles for all pages and specific styles for the add product form.
+*/
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: #2c3e50;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+th {
+    background: #eaeaea;
+}
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+form {
+    margin-bottom: 10px;
+}
+
+/* If you want to add styles specific to add_product.php, use a class or id in that file and target it here. Example: */
+.add-product-form label { font-weight: bold; }
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form select {
+    border: 1px solid #007bff;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+.add-product-form button[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    cursor: pointer;
+}
+.add-product-form button[type="submit"]:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,20 @@
+<?php
+// sales_history.php
+// Displays the sales history page (feature not implemented).
+
+include 'connection.php';
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html>
+<head><title>Sales History</title></head>
+<body>
+<h2>Sales History</h2>
+<p>Feature not implemented.</p>
+<a href="sales.php">Back to Sales</a>
+</body>
+</html>
